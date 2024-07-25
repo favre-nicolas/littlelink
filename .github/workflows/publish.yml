@@ -19,6 +19,6 @@ jobs:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ca81603ffa53165e086028cdc4612c5a
           projectName: nicolas-favre-link
-          directory: /
+          directory: ./
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
           branch: master
