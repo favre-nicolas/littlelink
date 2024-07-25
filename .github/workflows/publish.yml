@@ -21,4 +21,4 @@ jobs:
           projectName: nicolas-favre-link
           directory: ./
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
-          branch: master
+          branch: main
