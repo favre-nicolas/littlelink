@@ -659,3 +659,13 @@ filter: brightness(90%);
 .button.button-minestrator:focus {
   filter: brightness(90%);
 }
+
+/* Tellingtone */
+.button.button-tellingtone {
+  color: #ffffff;
+  background-color: #070512;
+}
+.button.button-tellingtone:hover,
+.button.button-tellingtone:focus {
+  filter: brightness(90%);
+}
