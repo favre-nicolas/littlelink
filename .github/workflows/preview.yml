@@ -1,0 +1,24 @@
+on:
+  push:
+    branches:
+      - develop
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      deployments: write
+    name: Publish to Cloudflare Pages
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Publish to Cloudflare Pages
+        uses: cloudflare/pages-action@v1
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ca81603ffa53165e086028cdc4612c5a
+          projectName: nicolas-favre-link
+          directory: ./
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+          branch: master
