@@ -649,3 +649,13 @@ filter: brightness(90%);
 .button.button-xing:focus {
   filter: brightness(90%);
 }
+
+/* MineStrator */
+.button.button-minestrator {
+  color: #ffffff;
+  background-color: #009B72;
+}
+.button.button-minestrator:hover,
+.button.button-minestrator:focus {
+  filter: brightness(90%);
+}
